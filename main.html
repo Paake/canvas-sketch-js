@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <canvas width="600" height="600"></canvas> // AREA TO WORK
+
+        <script>
+            let canvas = document.querySelector('canvas'); // VARIABLE 
+            let context = canvas.getContext('2d'); // CAN BE 2D OR 3D
+
+            context.fillStyle = 'blue'; // PROPERTY THAT IS A VARIABLE THAT IS PART OF AN OBJECT
+            context.fillRect(100, 100, 400, 400); // FUNCTION THAT TAKES FOUR PARAMETERS 'X, Y, WIDTH AND HEIGHT' THE POINT 0,0 LEFT CORNER
+
+            // OTHER PROPERTY OF CANVAS
+            context.lineWidth = 4; // PROPERTY OF THE CANVAS CONTEXT
+            context.beginPath(); // METHOD BEGINS A PATH OR RESET THE CURRENT PATH
+            context.rect(100, 100, 400, 400); // MEASUREMENTS OF THE CANVA 'SQUARE' FIGURE
+            context.stroke(); //  PROPERTY DEFINES THE COLOR OF THE LINE, TEXT OR OUTLINE OF AN ELEMENT - DEFAULT BLACK
+
+            // CIRCLE
+            context.beginPath();
+            context.arc(100, 100, 0, Math.PI * 2);
+            context.stroke();
+
+            // VARIABLES 
+            let year = 2042;
+            let nextYear = year + 1;
+
+            let dinner = 'pasta';
+            let sentence = 'tonight, dinner will be ' + dinner;
+
+            // FUNCTIONS 
+            function saySomething (param) {
+                console.log(param);
+            }
+
+            saySomething('Hey there');
+
+            function add(a, b) {
+                return a + b;
+            }
+
+            let result = add(5, 7);
+            console.log(result);
+
+            let multiply = (a, b) => {
+                return a * b;
+            }
+
+            console.log(multiply(5, 7));
+
+            Math.random() // BE 0 ..... 1
+
+        </script>
+    </body>
+</html>
